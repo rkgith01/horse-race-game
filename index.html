@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Racing Game</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="col mt-3">Horse Racing Game</h1>
+        <p class="">There are 25 horses. Click the button to generate a random horse order and initiate the race.</p>
+        <button type="button" class="btn btn-primary" onclick="generateRandomOrder()">Generate Random Horse
+          Order</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- <div class="col text-center mt-3">
+      <input type="number" id="userInput" class="form-control align-center" min="1" max="25" placeholder="Enter your horse number (1-25)" style="width: 20rem;">
+<button type="button" class="btn btn-primary m-2" onclick="checkSelectedHorse()">Check Horse</button>
+
+    </div> -->
+      <div class="d-flex justify-content-center mt-3">
+        <input type="number" id="userInput" class="form-control" min="1" max="25"
+          placeholder="Enter your horse number (1-25)" style="width: 20rem;">
+        <button type="button" class="btn btn-primary ml-2" onclick="checkSelectedHorse()">Check Horse</button>
+      </div>
+
+    </div>
+    <div id="messageCardContainer" class=" m-1"></div>
+    <div id="raceResults" class="mt-3"></div>
+    <div id="horsesContainer" class="row-sm mt-3"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
